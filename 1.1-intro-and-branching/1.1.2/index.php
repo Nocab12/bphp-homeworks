@@ -15,7 +15,7 @@ if($time >= 6 and $time <= 10) {
 } elseif($time >= 18 and $time <= 22) {
     $greeting = 'Добрый вечер';
     $image = 'img/evening.jpg';
-} elseif($time >= 0 and $time <= 5 and $time == 23) {
+} elseif(($time >= 0 and $time <= 5) or $time>=23) {
     $greeting = 'Доброй ночи!';
     $image = 'img/night.jpg';
 }
