@@ -1,21 +1,5 @@
-<?php 
-$variable = array(
-    "foo" => "bar",
-    "bar" => "foo",
-);
-if(is_bool($variable)) {
-    echo 'bool';
-} elseif (is_float($variable)) {
-    echo 'float';
-} elseif(is_int($variable)) {
-    echo 'int';
-} elseif(is_string($variable)) {
-    echo 'string';
-} elseif(is_null($variable)) {
-    echo 'null';
-} else {
-    echo 'other';
-}
+<?php
+ $variable ='1';
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +12,23 @@ if(is_bool($variable)) {
 <body>
     <div class="img" style="background-image: url(<?= $image; ?>)">
         <div class="greeting">
-            <h2><?= var_dump($variable); ?></h1>
+            <h2>
+                <?php 
+                    if(is_bool($variable)) {
+                        echo 'bool';
+                    } elseif (is_float($variable)) {
+                        echo 'float';
+                    } elseif(is_int($variable)) {
+                        echo 'int';
+                    } elseif(is_string($variable)) {
+                        echo 'string';
+                    } elseif(is_null($variable)) {
+                        echo 'null';
+                    } else {
+                        echo 'other';
+                    }
+                ?>
+            </h2>
         </div>
     </div>
 </body>
